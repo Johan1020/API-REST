@@ -26,6 +26,7 @@ router.get("/users/:id", (req, res) => {
     .catch((error) => res.json({ message: error }));
 });
 
+//Eliminar
 router.delete("/users/:id", (req, res) => {
   const { id } = req.params;
   userSchema
